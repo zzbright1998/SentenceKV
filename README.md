@@ -3,11 +3,16 @@
 [![Paper](https://img.shields.io/badge/Paper-arXiv:2504.00970-green.svg)](https://arxiv.org/abs/2504.00970)
 [![Conference](https://img.shields.io/badge/COLM-2025-blue.svg)](https://colmweb.org/)
 
-Official implementation of **"SentenceKV: Efficient LLM Inference via Sentence-Level Semantic KV Caching"** (COLM 2025).
+Official implementation of **["SentenceKV: Efficient LLM Inference via Sentence-Level Semantic KV Caching"](https://arxiv.org/abs/2504.00970)** (COLM 2025).
 
 ## Overview
 
 SentenceKV is an efficient KV cache compression method that organizes the KV cache at the sentence level based on semantic similarity. Unlike token-level compression methods, SentenceKV leverages the natural structure of language by clustering semantically similar sentences and maintaining a compact cache that preserves important contextual information.
+
+<div align="center">
+  <img src="Figure/Diagram.png" alt="SentenceKV Method Diagram" width="80%">
+  <p><em>Overview of the SentenceKV method</em></p>
+</div>
 
 ### Key Features
 
@@ -161,6 +166,18 @@ SentenceKV demonstrates significant improvements in:
 - **Memory Efficiency**: Reduced KV cache memory usage
 - **Inference Speed**: Faster generation with compressed cache
 - **Quality Preservation**: Maintains performance on long-context tasks
+
+### Experimental Results
+
+<div align="center">
+  <img src="Figure/LongBench_result.png" alt="LongBench Results" width="90%">
+  <p><em>Performance comparison on LongBench datasets</em></p>
+</div>
+
+<div align="center">
+  <img src="Figure/RULER_result.png" alt="RULER Results" width="90%">
+  <p><em>Performance comparison on RULER benchmark</em></p>
+</div>
 
 Detailed results are available in our [paper](https://arxiv.org/abs/2504.00970).
 
