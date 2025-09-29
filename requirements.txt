@@ -1,0 +1,25 @@
+# Core ML/NLP libraries
+transformers>=4.44.0
+accelerate>=1.0.0
+torch>=2.0.0
+flash-attn>=2.6.0
+datasets>=3.0.0
+tokenizers>=0.19.0
+sentencepiece>=0.2.0
+safetensors>=0.4.0
+
+# Evaluation and metrics
+evaluate>=0.4.0
+rouge-score>=0.1.2
+nltk>=3.8
+scikit-learn>=1.5.0
+
+# Utilities
+numpy>=1.26.0
+pandas>=2.2.0
+tqdm>=4.66.0
+pyyaml>=6.0
+requests>=2.31.0
+
+# Optional: for better performance monitoring
+gpustat>=1.1.0
